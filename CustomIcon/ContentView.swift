@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isShow: Bool = true
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Toggle("Show custom icon", isOn: $isShow.animation())
+                .toggleStyle(.button)
+            Spacer()
+                .frame(height: 200)
+            CustomIconView(isShow: $isShow)
+                .frame(width: 250, height: 250)
+            Spacer()
+                .frame(height: 100)
+        }
     }
 }
 

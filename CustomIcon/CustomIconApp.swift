@@ -12,6 +12,7 @@ struct CustomIconApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(width: 250, height: 250)
         }
     }
 }

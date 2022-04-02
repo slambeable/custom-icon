@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isShow: Bool = true
+    @State var isShow: Bool = false
 
     var body: some View {
         VStack {
